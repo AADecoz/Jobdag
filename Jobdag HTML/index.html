@@ -8,52 +8,62 @@
       <title>Jobdag</title>
    </head>
 
-   <body>
+<body>
 
-      <header class="header">
+<header id="header" class="header">
 
-         <nav class="header__nav">
+   <nav class="header__nav">
+      <ul class="header__nav__list">
+         <li class="header__nav__list__item">
+            <a href="#header">Home</a>
+         </li>
+         <li class="header__nav__list__item">
+            <a href="#students">Students</a>
+         </li>
+         <li class="header__nav__list__item">
+            <a href="#agenda">Event Agenda</a>
+         </li>
+         <li class="header__nav__list__item">
+            <a href="#course">Course Scope</a>
+         </li>
+      </ul>
+      <ul class="header__nav__lang">
+         <li class="header__nav__lang__switch"><a href="?lang=en">EN</a></li>
+         <li class="header__nav__lang__switch"><a href="?lang=nl">NL</a></li>
+      </ul>
+   </nav>
 
-            <ul class="header__nav__list">
-               <li class="header__nav__list__item">
-                  <a href="">Home</a>
-               </li>
-               <li class="header__nav__list__item">
-                  <a href="">Students</a>
-               </li>
-               <li class="header__nav__list__item">
-                  <a href="">Event Agenda</a>
-               </li>
-               <li class="header__nav__list__item">
-                  <a href="">Course Scope</a>
-               </li>
-            </ul>
+   <section class="header__section">
+      <h3 class="header__section__info">26 August 2021, online</h3>
+      <h1 class="header__section__title">PHP Jobdag</h1>
+      <h4 class="header__section__subtitle">Back-end developers meet business partners</h4>
+      <a href="#footer" class="header__section__registerlink">Register</a>
+   </section>
 
-            <ul class="header__nav__lang">
-               <li class="header__nav__lang__switch"><a href="?lang=en">EN</a></li>
-               <li class="header__nav__lang__switch"><a href="?lang=nl">NL</a></li>
-            </ul>
+   <section class="header__counter">
+      <article class="header__counter__day">
+         <h3 class="header__counter__day__time"></h3>
+         <h3 class="header__counter__day__unit">Days</h3>
+      </article>
+      <article class="header__counter__hour">
+         <h3 class="header__counter__hour__time"></h3>
+         <h3 class="header__counter__hour__unit">Hours</h3>
+      </article>
+      <article class="header__counter__min">
+         <h3 class="header__counter__min__time"></h3>
+         <h3 class="header__counter__min__unit">Minutes</h3>
+      </article>
+      <article class="header__counter__sec">
+         <h3 class="header__counter__sec__time"></h3>
+         <h3 class="header__counter__sec__unit">Seconds</h3>
+      </article>
+   </section>
 
-         </nav>
+</header>
 
-         <section class="header__section">
-            <h3 class="header__section__info">26 August 2021, online</h3>
-            <h1 class="header__section__title">PHP Jobdag</h1>
-            <h4 class="header__section__subtitle">Back-end developers meet business partners</h4>
-            <a href="#section-register" class="header__section__registerlink">Register</a>
-         </section>
-
-         <section class="header__counter">
-            <time class="header__counter__time" datetime="2021-08-26">Jobdag</time>
-         </section>
-
-      </header>
-
-      <section class="students">
-         <h2 class="students__title">Meet the Students</h2>
-         <h3 class="students__quote">Quote: “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.”
-
-            – Bill Gates</h3>
+<section id="students" class="students">
+   <h2 class="students__title">Meet the Students</h2>
+   <h3 class="students__quote">Quote: “Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - Bill Gates</h3>
 
          <article class="students__card">
             <img class="students__card__img" src="alexander.jpg" alt="profile picture Alexander Decoz">
@@ -188,23 +198,28 @@
          </article>
       </section>
 
-      <section class="agenda">
-         <h2 class=agenda__title">Check out the agenda</h2>
-         <section class="agenda__intro">
-            <p class="agenda__intro__info">Introductory presentation</p>
-            <p class="agenda__intro__time" >9.00-9.30</p>
-         </section>
-         <section class="agenda__interview">
-            <p class="agenda__interview__info">Speed interview session</p>
-            <p class="agenda__interview__time">9.30-12</p>
-            <p class="agenda__interview__txt">text</p>
-         </section>
-         <section class="agenda__feedback">
-            <p class="agenda__feedback__info">Feedback moment</p>
-            <p class="agenda__feedback__time">12-12.30</p>
-         </section>
-         <p class="agenda__description">It is time to discover our students and to match your favorite...</p>
-      </section>
+<section id="agenda" class="agenda">
+   <h2 class=agenda__title">Check out the agenda</h2>
+
+   <section class="agenda__intro">
+      <p class="agenda__intro__info">Introductory presentation</p>
+      <p class="agenda__intro__time" >9.00-9.30</p>
+   </section>
+
+   <section class="agenda__interview">
+      <p class="agenda__interview__info">Speed interview session</p>
+      <p class="agenda__interview__time">9.30-12</p>
+      <p class="agenda__interview__txt">text</p>
+   </section>
+
+   <section class="agenda__feedback">
+      <p class="agenda__feedback__info">Feedback moment</p>
+      <p class="agenda__feedback__time">12-12.30</p>
+   </section>
+
+   <p class="agenda__description">It is time to discover our students and to match your favorite...</p>
+
+</section>
 
       <section id="course">
          <h2 class="course__title">See the course scope</h2>
@@ -250,30 +265,28 @@
          </section>
       </section>
 
+<footer id="footer" class="footer">
+   <h2 class="footer__title">Save your spot</h2>
 
-
-
-      <section class="register">
-         <h2 class="register__title">Save your spot</h2>
-         <section class="register__section">
-               <form class="register__section__form" action="mailfile.php" method="post">
-                  <label class="register__section__form__label" for="name">Your Name</label>
-                  <input class="register__section__form__input" type="text" id="name" required>
-                  <label class="register__section__form__label" for="company-name">Company name</label>
-                  <input class="register__section__form__input" type="text" id="company-name" required>
-                  <label class="register__section__form__label" for="telephone">Your digits</label>
-                  <input class="register__section__form__input" type="tel" id="telephone" required>
-                  <label class="register__section__form__label" for="email">Email</label>
-                  <input class="register__section__form__input" type="email" id="email" required>
-                  <input type="register__section__form__submit" value="register">
-               </form>
-               <article>
-                   <h3>Fill in your details and save your spot!</h3>
-                   <p>This even is fully remote.</p>
-                   <p>Date: 26 August 2021</p>
-                   <p>After your registration is approved we will provide you with a meeting link and the password to the event.</p>
-               </article>
-         </section>
+   <section class="footer__register">
+      <form class="footer__register__form" action="" method="post">
+         <label class="footer__register__form__label" for="name">Your Name</label>
+         <input class="footer__register__form__input" type="text" id="name" required>
+         <label class="footer__register__form__label" for="company-name">Company name</label>
+         <input class="footer__register__form__input" type="text" id="company-name" required>
+         <label class="footer__register__form__label" for="telephone">Your digits</label>
+         <input class="footer__register__form__input" type="tel" id="telephone" required>
+         <label class="footer__register__form__label" for="email">Email</label>
+         <input class="footer__register__form__input" type="email" id="email" required>
+         <input type="footer__register__form__submit" value="register">
+      </form>
+      <article class="footer__register__info">
+         <h3 class="footer__register__info__title">Fill in your details and save your spot!</h3>
+         <p class="footer__register__info__location">This event is fully remote.</p>
+         <p class="footer__register__info__date">Date: 26 August 2021</p>
+         <p class="footer__register__info__approval">After your registration is approved we will provide you with a meeting link and the password to the event.</p>
+      </article>
+   </section>
 
          <section>
             <article>
@@ -331,16 +344,19 @@
 
             </article>
 
-         </section>
-      </section>
-   <footer>
-      <p >&copy;</p>
-      <p></p>
-      <img src="" alt="">
-   </footer>
+   <section class="footer__lang">
+      <ul class="footer__lang__lang">
+         <li class="footer__lang__lang__switch"><a href="?lang=en">EN</a></li>
+         <li class="footer__lang__lang__switch"><a href="?lang=nl">NL</a></li>
+      </ul>
+   </section>
 
+   <section class="footer__copyright">
+      <p class="footer__copyright__text">&copy; 2021 PHP</p>
+      <p class="footer__copyright__corporation"></p>
+      <img class="footer__copyright__vdablogo" src="img/partners__vdab.svg" alt="">
+   </section>
+</footer>
 
-
-   </body>
-
+</body>
 </html>
